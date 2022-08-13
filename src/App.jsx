@@ -1,15 +1,19 @@
-import Header from './components/Header';
+import Header from "./components/Header";
 import './App.css';
-import About from './components/About';
-import Technologies from './components/Technologies';
+import { useState } from "react";
+
 
 function App() {
+
+  const [showAbout, setShowTechnologies] = useState();
   return (
+
     <div>
+      <button>About</button>
+      <button>Technologies</button>
       <Header />
-      <About />
-      <Technologies />
     </div>
+
   );
 }
 
