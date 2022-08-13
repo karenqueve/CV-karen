@@ -9,8 +9,8 @@ function App() {
   return (
 
     <div>
-      <button>About</button>
-      <button>Technologies</button>
+      <button onClick={() => showAbout()}>About</button>
+      <button onClick={() => setShowTechnologies()}>Technologies</button>
       <Header />
     </div>
 
