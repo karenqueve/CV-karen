@@ -1,16 +1,19 @@
 import Header from "./components/Header";
 import './App.css';
 import { useState } from "react";
-
+import About from "./components/About";
+import Technologies from "./components/Technologies";
 
 function App() {
 
-  const [showAbout, setShowTechnologies] = useState();
+  const [show, setShow] = useState();
   return (
 
     <div>
-      <button onClick={() => showAbout()}>About</button>
-      <button onClick={() => setShowTechnologies()}>Technologies</button>
+      <button onClick={() => setShow("about")}>About</button>
+      {show === 'about' ? <About /> : null}
+      <button onClick={() => setShow("technologies")}>Technologies</button>
+      {show === 'technologies' ? <Technologies /> : null}
       <Header />
     </div>
 
