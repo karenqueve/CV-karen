@@ -1,7 +1,6 @@
-import React from 'react'
 
 
-export const Cv = {
+export const CV = {
     about: {
         name: "Lorem",
         aboutMe:
@@ -21,4 +20,4 @@ export const Cv = {
 };
 
 
-export default Cv
+export default CV

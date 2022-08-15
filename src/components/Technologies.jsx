@@ -1,11 +1,20 @@
 import React from 'react'
 
-const Technologies = () => {
+export default function Technologies({ technologies }) {
     return (
         <div>
-            <h1>Estoy dentro de Technologies</h1>
+            <h1>Technologies</h1>
+
+            {
+                Technologies.map((technology, index) => {
+                    return (
+                        <div key={index}>
+                            <h2>technology.name</h2>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
 
-export default Technologies
