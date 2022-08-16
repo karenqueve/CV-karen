@@ -8,6 +8,9 @@ export const CV = {
     },
     technologies: [
         {
+            name: "Css",
+        },
+        {
             name: "JavaScript",
         },
         {
