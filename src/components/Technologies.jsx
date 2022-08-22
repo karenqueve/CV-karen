@@ -6,10 +6,10 @@ export default function Technologies({ technologies }) {
             <h1>Technologies</h1>
 
             {
-                Technologies.map((technology, index) => {
+                technologies.map((technology, index) => {
                     return (
                         <div key={index}>
-                            <h2>technology.name</h2>
+                            <h2>{technology.name}</h2>
                         </div>
                     )
                 })
