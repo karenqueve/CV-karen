@@ -20,7 +20,7 @@ function App() {
       <button onClick={() => setShow("about")}>About</button>
       <button onClick={() => setShow("technologies")}>Technologies</button>
 
-      {show === 'about' ? <About /> : null}
+      {show === 'about' ? <About about={about} /> : null}
       {show === 'technologies' && <Technologies technologies={technologies} />}
 
       <button>New</button>
