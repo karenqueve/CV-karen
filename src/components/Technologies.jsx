@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Technologies.scss';
 
 export default function Technologies({ technologies }) {
     return (
