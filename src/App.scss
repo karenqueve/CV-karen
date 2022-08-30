@@ -1,8 +1,48 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    text-decoration: none;
+
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Kdam+Thmor+Pro&family=Oswald:wght@200&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+}
+
+button {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 0px #f8f6f6;
+    border: none;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #C70039;
+    color: whitesmoke;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #C70039;
+    padding-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #C70039;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #C70039;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 0px #C70039;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.scss';
+
 
 export default function About({ about }) {
     return (
-        <div>
+        <div className='title'>
             <h1>Estoy dentro de About</h1>
 
             <h2>{about.name}</h2>

@@ -1,20 +1,27 @@
 import React from 'react';
-import './Technologies.scss';
+
 
 export default function Technologies({ technologies }) {
     return (
         <div>
-            <h1>Technologies</h1>
+            <div className='title'>
+                <h1>Technologies</h1>
+            </div>
 
-            {
-                technologies.map((technology, index) => {
-                    return (
-                        <div key={index}>
-                            <h2>{technology.name}</h2>
-                        </div>
-                    )
-                })
-            }
+            <div className='container'>
+
+                {
+                    technologies.map((technology, index) => {
+                        return (
+                            <div key={index}>
+                                <h2>{technology.name}</h2>
+                            </div>
+                        )
+                    })
+                }
+
+            </div>
+
         </div>
     )
 }

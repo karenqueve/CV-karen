@@ -1,4 +1,3 @@
-import './App.css';
 import { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -18,8 +17,10 @@ function App() {
 
     <div>
       <Header />
-      <button onClick={() => setShow("about")}>About</button>
-      <button onClick={() => setShow("technologies")}>Technologies</button>
+      <div className="navBarContainer">
+        <button onClick={() => setShow("about")}>About</button>
+        <button onClick={() => setShow("technologies")}>Technologies</button>
+      </div>
 
       {show === 'about' ? <About about={about} /> : null}
       {show === 'technologies' && <Technologies technologies={technologies} />}
