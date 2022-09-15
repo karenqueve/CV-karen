@@ -2,12 +2,15 @@ import { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
-import { CV } from './CV/CV';
+import Habilities from "./components/Habilities";
+import Experience from "./components/Experience";
+import Languages from "./components/Languages";
+import Education from "./components/Education";
 import './App.scss';
 
-const { about, technologies } = CV;
+const { about, technologies, education, experience, languages, habilities } = CV;
 
-function App() {
+const App = () => {
 
   const [show, setShow] = useState();
 
@@ -16,6 +19,10 @@ function App() {
   return (
 
     <div>
+      <Education education={education} />
+      <Experience experience={experience} />
+      <Languages languages={languages} />
+      <Habilities habilities={habilities} />
       <Header />
       <div className="navBarContainer">
         <button onClick={() => setShow("about")}>About</button>
@@ -27,7 +34,10 @@ function App() {
 
       <button>New</button>
 
+
     </div>
+
+
 
   );
 }
