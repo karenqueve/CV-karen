@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Languages from "./components/Languages";
 import Education from "./components/Education";
 import './App.scss';
+import { CV } from './CV/Cv';
 
 const { about, technologies, education, experience, languages, habilities } = CV;
 
@@ -19,20 +20,20 @@ const App = () => {
   return (
 
     <div>
-      <Education education={education} />
-      <Experience experience={experience} />
-      <Languages languages={languages} />
-      <Habilities habilities={habilities} />
       <Header />
       <div className="navBarContainer">
-        <button onClick={() => setShow("about")}>About</button>
+        <button onClick={() => setShow("about")}>About me</button>
+        <button onClick={() => setShow("education")}>Education</button>
         <button onClick={() => setShow("technologies")}>Technologies</button>
+        <button onClick={() => setShow("experience")}>Experience</button>
+        <button onClick={() => setShow("languages")}>Languages</button>
+        <button onClick={() => setShow("habilities")}>Habilities</button>
       </div>
 
       {show === 'about' ? <About about={about} /> : null}
-      {show === 'technologies' && <Technologies technologies={technologies} />}
+      {show === 'education' ? <Education education={education} /> : null}
+      {show === 'technologies' ? <Technologies technologies={technologies} /> : null}
 
-      <button>New</button>
 
 
     </div>
