@@ -35,6 +35,7 @@ const App = () => {
       {show === 'technologies' ? <Technologies technologies={technologies} /> : null}
       {show === 'experience' ? <Experience experiences={experience} /> : null}
       {show === 'languages' ? <Languages languages={languages} /> : null}
+      {show === 'habilities' ? <Habilities habilities={habilities} /> : null}
 
 
 

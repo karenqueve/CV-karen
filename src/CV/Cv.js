@@ -52,7 +52,7 @@ export const CV = {
     ],
 
     habilities: [
-        "Responsabilidad",
+        "Responsable",
         "Adaptable",
         "Perseverante",
 
