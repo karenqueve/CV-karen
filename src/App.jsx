@@ -33,6 +33,7 @@ const App = () => {
       {show === 'about' ? <About about={about} /> : null}
       {show === 'education' ? <Education education={education} /> : null}
       {show === 'technologies' ? <Technologies technologies={technologies} /> : null}
+      {show === 'experience' ? <Experience experiences={experience} /> : null}
 
 
 
