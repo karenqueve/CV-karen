@@ -40,10 +40,16 @@ export const CV = {
         },
     ],
 
-    languages: {
-        language: "English",
-        nivel: "Básico",
-    },
+    languages: [
+        {
+            language: "English",
+            nivel: "Básico"
+        },
+        {
+            language: "Spanish",
+            nivel: "Nativo"
+        }
+    ],
 
     habilities: [
         "Responsabilidad",
