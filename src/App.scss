@@ -1,18 +1,36 @@
-* {
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Kdam+Thmor+Pro&family=Oswald:wght@200&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+* {
+    // font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
 
 body {
     margin: 0;
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 button {
     background-color: whitesmoke;
     border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
     box-shadow: 4px 3px 8px 0px #f8f6f6;
     border: none;
+    font-size: medium;
+    color: #C70039;
+    margin: 2%;
 }
 
 .headerContainer {
@@ -25,14 +43,15 @@ button {
 .navBarContainer {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #C70039;
-    padding-bottom: 20px;
 }
 
 .title {
     display: flex;
     justify-content: center;
     color: #C70039;
+    margin: 1%;
 }
 
 .container {
@@ -44,18 +63,58 @@ button {
     margin-left: 5%;
     border-radius: 20px;
     box-shadow: 4px 3px 8px 0px #C70039;
+    margin-bottom: 2%;
+    color: #C70039;
 }
 
-.card {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    border-radius: 12px;
-    background-color: rgba(240, 248, 255, 0.241);
+.containerAbout {
+    display: flex;
+    border: 1px solid #C70039;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 0px #C70039;
+    color: #C70039;
+}
+
+.containerTechno {
+        display: flex;
+        border: 1px solid #C70039;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        // width: 20%;
+        padding: 3%;
+        align-items: center;
+        margin-left: 5%;
+        border-radius: 20px;
+        box-shadow: 4px 3px 8px 0px #C70039;
+        color: #C70039;
+        margin: 3%;
+}
+
+a {
+    color: #C70039;
+}
+
+.contactData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
     width: 300px;
     margin: 20px;
     border-radius: 20px;
+}
+
+.containerTechs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

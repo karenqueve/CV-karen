@@ -4,14 +4,14 @@ export default function Languages({ languages }) {
   return (
     <div>
         <div className="title">
-            <h1>Languages</h1>
+            <h1>Idiomas</h1>
         </div>
-        <div className="container">
+        <div className='containerTechs'>
             {
                 languages.map((language, index) => {
                     return (
-                        <div key={index}>
-                            <h2>{language.language}</h2>
+                        <div key={index} className="containerTechno">
+                            <h2 style={{'font-weight': 'bold'}}>{language.language}</h2>
                             <h2>{language.nivel}</h2>
                         </div>
                     )

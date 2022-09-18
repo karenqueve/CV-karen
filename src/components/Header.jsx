@@ -3,8 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div className='headerContainer'>
-            <h1>Karen Yamile Quevedo</h1>
-
+            <h1 style={{'font-style': 'italic'}}>Karen Yamile Quevedo</h1>
         </div>
     )
 }

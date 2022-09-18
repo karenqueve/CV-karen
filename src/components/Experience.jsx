@@ -4,14 +4,14 @@ export default function Experience({ experiences }) {
   return (
     <div>
         <div className="title">
-            <h1>Experience</h1>
+            <h1>Experiencia</h1>
         </div>
-        <div className="container">
+        <div>
             {
                 experiences.map((experience, index) => {
                     return (
-                        <div key={index}>
-                            <h2>{experience.name}</h2>
+                        <div key={index} className="container">
+                            <h2 style={{'font-weight': 'bold'}}>{experience.name}</h2>
                             <h2>{experience.date}</h2>
                         </div>
                     )

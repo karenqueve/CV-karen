@@ -13,7 +13,7 @@ export const CV = {
     },
     education: [
         {
-            name: "Desarrollador Wep",
+            name: "Desarrolladora Web",
             date: "2022/03 - 2022/07",
             where: "UpGrade",
         },
@@ -42,16 +42,16 @@ export const CV = {
 
     languages: [
         {
-            language: "English",
+            language: "Inglés",
             nivel: "Básico"
         },
         {
-            language: "Spanish",
+            language: "Español",
             nivel: "Nativo"
         }
     ],
 
-    habilities: [
+    skills: [
         "Responsable",
         "Adaptable",
         "Perseverante",
